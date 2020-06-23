@@ -2,20 +2,24 @@ import React from "react";
 
 function Categories() {
   return (
-    <div class="container has-text-centered">
-      <nav class="panel is-primary">
-        <p class="panel-heading">Categories</p>
-        <a class="panel-block">
-          <span class="panel-icon">
-            <i class="far fa-circle"></i>
+    <div className="container has-text-centered">
+      <nav className="panel is-primary">
+        <p className="panel-heading">Categories</p>
+        <a className="panel-block">
+          <span className="panel-icon">
+            <i className="far fa-circle"></i>
           </span>
           test
         </a>
-        <a class="panel-block">
-          <button class="button">
-            <i class="fas fa-plus"></i>
+        <a className="panel-block">
+          <button className="button">
+            <i className="fas fa-plus"></i>
           </button>
-          <input class="input" type="text" placeholder="Add another category" />
+          <input
+            className="input"
+            type="text"
+            placeholder="Add another category"
+          />
         </a>
       </nav>
     </div>

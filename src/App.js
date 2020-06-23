@@ -9,19 +9,18 @@ import Chooser from "./Chooser/Chooser";
 import Activities from "./Activities/Activities";
 import Categories from "./Categories/Categories";
 
-import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       {/* Main Header */}
-      <section class="hero is-primary has-text-centered">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">What are we doing tonight?</h1>
-            <h2 class="subtitle">
-              An app to help the indecisive <i class="far fa-grin-wink"></i>
+      <section className="hero is-primary has-text-centered">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">What are we doing tonight?</h1>
+            <h2 className="subtitle">
+              An app to help the indecisive <i className="far fa-grin-wink"></i>
             </h2>
           </div>
         </div>
@@ -29,7 +28,7 @@ function App() {
 
       {/* Tabs */}
       <Router>
-        <div class="tabs is-centered">
+        <div className="tabs is-centered">
           <ul>
             <ChooserTab />
             <ActivitiesTab />

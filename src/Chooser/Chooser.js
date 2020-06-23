@@ -2,11 +2,11 @@ import React from "react";
 
 function Chooser() {
   return (
-    <div class="container has-text-centered" id="chooser">
-      <a class="button is-primary is-rounded is-large">Pick for me plz</a>
-      <div class="field has-text-centered">
-        <div class="control has-text-centered">
-          <div class="select is-primary is-rounded is-small has-text-centered">
+    <div className="container has-text-centered" id="chooser">
+      <a className="button is-primary is-rounded is-large">Pick for me plz</a>
+      <div className="field has-text-centered">
+        <div className="control has-text-centered">
+          <div className="select is-primary is-rounded is-small has-text-centered">
             <select>
               {/* TODO: Add logic to list all categories */}
               <option>categorytest</option>
@@ -16,7 +16,7 @@ function Chooser() {
       </div>
       <br />
       {/* TODO: Add logic to list result here */}
-      <h1 class="title is-1">addresult here</h1>
+      <h1 className="title is-1">addresult here</h1>
     </div>
   );
 }
