@@ -1,13 +1,18 @@
 import React from "react";
 import "./App.scss";
+
 import ChooserTab from "./Chooser/ChooserTab";
 import CategoriesTab from "./Categories/CategoriesTab";
 import ActivitiesTab from "./Activities/ActivitiesTab";
 
+import ChooserComponent from "./Chooser/ChooserComponent";
+import ActivitiesComponent from "./Activities/ActivitiesComponent";
+import CategoriesComponent from "./Categories/CategoriesComponent";
+
 function App() {
   return (
     <div>
-      {/* Main Section */}
+      {/* Main Header */}
       <section class="hero is-primary has-text-centered">
         <div class="hero-body">
           <div class="container">
@@ -23,10 +28,15 @@ function App() {
       <div class="tabs is-centered">
         <ul>
           <ChooserTab />
-          <CategoriesTab />
           <ActivitiesTab />
+          <CategoriesTab />
         </ul>
       </div>
+
+      {/* Components */}
+      <ChooserComponent />
+      <ActivitiesComponent />
+      <CategoriesComponent />
     </div>
   );
 }

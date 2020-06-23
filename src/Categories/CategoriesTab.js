@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChooserTab() {
+function CategoriesTab() {
   return (
     <div>
       <li id="category_tab">
@@ -15,4 +15,4 @@ function ChooserTab() {
   );
 }
 
-export default ChooserTab;
+export default CategoriesTab;
