@@ -9,6 +9,7 @@ import Chooser from "./Chooser/Chooser";
 import Activities from "./Activities/Activities";
 import Categories from "./Categories/Categories";
 
+import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
