@@ -5,9 +5,11 @@ import ChooserTab from "./Chooser/ChooserTab";
 import CategoriesTab from "./Categories/CategoriesTab";
 import ActivitiesTab from "./Activities/ActivitiesTab";
 
-import ChooserComponent from "./Chooser/ChooserComponent";
-import ActivitiesComponent from "./Activities/ActivitiesComponent";
-import CategoriesComponent from "./Categories/CategoriesComponent";
+import Chooser from "./Chooser/Chooser";
+import Activities from "./Activities/Activities";
+import Categories from "./Categories/Categories";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -25,18 +27,20 @@ function App() {
       </section>
 
       {/* Tabs */}
-      <div class="tabs is-centered">
-        <ul>
-          <ChooserTab />
-          <ActivitiesTab />
-          <CategoriesTab />
-        </ul>
-      </div>
-
-      {/* Components */}
-      <ChooserComponent />
-      <ActivitiesComponent />
-      <CategoriesComponent />
+      <Router>
+        <div class="tabs is-centered">
+          <ul>
+            <ChooserTab />
+            <ActivitiesTab />
+            <CategoriesTab />
+          </ul>
+        </div>
+        <Switch>
+          <Route path="/activities" component={Activities} />
+          <Route path="/categories" component={Categories} />
+          <Route path="/" component={Chooser} />
+        </Switch>
+      </Router>
     </div>
   );
 }

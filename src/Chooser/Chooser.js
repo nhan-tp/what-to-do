@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChooserTab() {
+function Chooser() {
   return (
     <div class="container has-text-centered" id="chooser">
       <a class="button is-primary is-rounded is-large">Pick for me plz</a>
@@ -21,4 +21,4 @@ function ChooserTab() {
   );
 }
 
-export default ChooserTab;
+export default Chooser;

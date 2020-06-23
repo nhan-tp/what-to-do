@@ -1,6 +1,6 @@
 import React from "react";
 
-function ActivitiesComponent() {
+function Activities() {
   return (
     <div class="container has-text-centered">
       <nav class="panel is-primary">
@@ -27,4 +27,4 @@ function ActivitiesComponent() {
   );
 }
 
-export default ActivitiesComponent;
+export default Activities;
