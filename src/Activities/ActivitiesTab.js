@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ActivitiesTab() {
+export default function ActivitiesTab() {
   return (
     <li id="activities_tab">
       <Link to="/activities">
@@ -13,5 +13,3 @@ function ActivitiesTab() {
     </li>
   );
 }
-
-export default ActivitiesTab;

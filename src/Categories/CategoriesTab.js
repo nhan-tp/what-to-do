@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function CategoriesTab() {
+export default function CategoriesTab() {
   return (
     <li id="category_tab">
       <Link to="/categories">
@@ -13,5 +13,3 @@ function CategoriesTab() {
     </li>
   );
 }
-
-export default CategoriesTab;

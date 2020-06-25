@@ -11,7 +11,7 @@ import Categories from "./Categories/Categories";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div>
       {/* Main Header */}
@@ -44,5 +44,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

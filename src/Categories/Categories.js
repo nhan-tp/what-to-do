@@ -1,6 +1,6 @@
 import React from "react";
 
-function Categories() {
+export default function Categories() {
   return (
     <div className="container has-text-centered">
       <nav className="panel is-primary">
@@ -25,5 +25,3 @@ function Categories() {
     </div>
   );
 }
-
-export default Categories;

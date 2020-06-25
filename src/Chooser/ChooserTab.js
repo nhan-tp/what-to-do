@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ChooserTab() {
+export default function ChooserTab() {
   return (
     <li id="chooser_tab">
       <Link to="/">
@@ -13,5 +13,3 @@ function ChooserTab() {
     </li>
   );
 }
-
-export default ChooserTab;

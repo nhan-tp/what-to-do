@@ -1,6 +1,6 @@
 import React from "react";
 
-function Activities() {
+export default function Activities() {
   return (
     <div className="container has-text-centered">
       <nav className="panel is-primary">
@@ -30,5 +30,3 @@ function Activities() {
     </div>
   );
 }
-
-export default Activities;
