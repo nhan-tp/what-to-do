@@ -12,6 +12,12 @@ import Categories from "./Categories/Categories";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
+  const [categories, setCategories] = useState([
+    { id: 1, name: "test1" },
+    { id: 2, name: "test2" },
+    { id: 3, name: "test3" },
+  ]);
+
   return (
     <div>
       {/* Main Header */}

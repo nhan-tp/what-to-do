@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import CategoriesList from "../Categories/CategoriesList";
 
-export default function Chooser() {
-  const [categories, setCategories] = useState([
-    { id: 1, name: "test1" },
-    { id: 2, name: "test2" },
-    { id: 3, name: "test3" },
-  ]);
-  // const [chosenCategories, setChosenCategories] = useState([]);
+export default function Chooser(categories) {
+  const [chosenCategories, setChosenCategories] = useState([]);
   const [chosenCategory, setChosenCategory] = useState("");
-  let chosenCategories = [];
+
   function chooseCategory(e) {
     const categoryNames = categories.map((category) => category.name);
     const randomCategory = getRandomCategory(categoryNames);
-
-    // setChosenCategory(randomCategory);
+    setChosenCategory(randomCategory);
   }
 
   function getRandomCategory(categories) {
@@ -22,11 +16,6 @@ export default function Chooser() {
 
     if (categories.length > 0) {
       // Keep generating random result
-      console.log(
-        !randomCategory ||
-          (chosenCategories.includes(randomCategory) &&
-            chosenCategories.length < categories.length)
-      );
       while (
         !randomCategory ||
         (chosenCategories.includes(randomCategory) &&
@@ -34,17 +23,13 @@ export default function Chooser() {
       ) {
         randomCategory =
           categories[Math.floor(Math.random() * categories.length)];
-        console.log(randomCategory);
       }
 
       if (chosenCategories.length === categories.length) {
-        // setChosenCategories([]);
-        chosenCategories = [];
+        setChosenCategories((chosen) => []);
       }
-      chosenCategories.push(randomCategory);
-      // setChosenCategories((chosen) => chosen.concat(randomCategory));
+      setChosenCategories((chosen) => [...chosen, randomCategory]);
     }
-    console.log(randomCategory, chosenCategories);
     return randomCategory;
   }
 
@@ -67,7 +52,6 @@ export default function Chooser() {
         </div>
       </div>
       <br />
-      {/* TODO: Add logic to list result here */}
       <h1 className="title is-1">{chosenCategory}</h1>
     </div>
   );

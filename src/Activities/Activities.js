@@ -1,13 +1,17 @@
 import React from "react";
 
-export default function Activities() {
+export default function Activities(categories) {
+  const categoryNames = categories.map((category) => (
+    <a key={category.id}>{category.name}</a>
+  ));
+
   return (
     <div className="container has-text-centered">
       <nav className="panel is-primary">
         <p className="panel-heading">Activities</p>
         <p className="panel-tabs">
           {/* TODO: Add logic to show categories */}
-          <a>categories tabs</a>
+          {categoryNames}
         </p>
         <a className="panel-block">
           <span className="panel-icon">

@@ -5,6 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "@fortawesome/fontawesome-free/js/all.js";
 
+import { createStore } from "redux";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
